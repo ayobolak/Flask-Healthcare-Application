@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Income Survey</title>
+</head>
+<body>
+    <h2>Income and Expense Survey</h2>
+    <form method="POST">
+        <label>Age:</label><br>
+        <input type="number" name="age" required><br><br>
+
+        <label>Gender:</label><br>
+        <select name="gender" required>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label>Total Income:</label><br>
+        <input type="number" name="total_income" step="0.01" required><br><br>
+
+        <h3>Expenses</h3>
+
+<label><input type="checkbox" name="expense_categories" value="utilities"> Utilities</label>
+<input type="number" name="utilities" step="0.01"><br>
+
+<label><input type="checkbox" name="expense_categories" value="entertainment"> Entertainment</label>
+<input type="number" name="entertainment" step="0.01"><br>
+
+<label><input type="checkbox" name="expense_categories" value="school_fees"> School Fees</label>
+<input type="number" name="school_fees" step="0.01"><br>
+
+<label><input type="checkbox" name="expense_categories" value="shopping"> Shopping</label>
+<input type="number" name="shopping" step="0.01"><br>
+
+<label><input type="checkbox" name="expense_categories" value="healthcare"> Healthcare</label>
+<input type="number" name="healthcare" step="0.01"><br><br>
+ <input type="submit" value="Submit"> 
+  </form>
+</body>
+</html>
