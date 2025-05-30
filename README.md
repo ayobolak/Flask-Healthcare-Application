@@ -1,39 +1,48 @@
 # Flask-Healthcare-Application
 
-# 🧾 Income & Expense Survey Web Application
+# Income & Expense Survey Web Application
 
-A full-stack data collection and analysis pipeline built with **Flask**, **MongoDB**, and **Jupyter Notebook**. This project allows users to submit personal income and expense data via a web form, securely store it in a database, and analyze the data through powerful Python-based visualizations.
+A full-stack data collection and analysis pipeline built with **Flask**, **MongoDB**, **Jupyter Notebook** and deployed on **AWS**. This project allows users to submit personal income and expense data via a web form, securely store it in a database, and analyze the data through powerful Python-based visualizations.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project enables efficient collection and analysis of user financial data:
 
-- 🔸 Built with **Flask** for the web interface and backend logic.
-- 🔸 Data stored securely in **MongoDB**.
-- 🔸 User data modeled with a custom Python `User` class.
-- 🔸 Data exported to CSV for analysis.
-- 🔸 Analytical visualizations generated using **pandas**, **matplotlib**, and **seaborn** in **Jupyter Notebooks**.
+-  Built with **Flask** for the web interface and backend logic.
+-  Data stored securely in **MongoDB**.
+-  User data modeled with a custom Python `User` class.
+-  Data exported to CSV for analysis.
+-  Analytical visualizations generated using **pandas**, **matplotlib**, and **seaborn** in **Jupyter Notebooks**.
+-  Deployed on AWS - 
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
-<pre> ``` project_folder/ │ ├── templates/ │ ├── index.html # HTML form for user input │ └── submissions.html # Page to display all submissions │ ├── application.py # Main Flask application ├── users.csv # Exported CSV from MongoDB data ├── UserData.csv.ipynb # Notebook to export data to CSV └── Analysis.ipynb # Data analysis and visualizations ``` </pre>
----
+├── templates/
+│ ├── index.html # HTML form for user input
+│ └── submissions.html # Page to display all submissions
+│
+├── application.py # Main Flask application
+├── users.csv # Exported CSV from MongoDB data
+├── UserData.csv.ipynb # Notebook to export data to CSV
+└── Analysis.ipynb # Data analysis and visualizations
 
-## 🧱 Technologies Used
+
+## Technologies Used
 
 - Flask: Web framework for UI and backend
 - MongoDB: NoSQL database to store form submissions
 - Python: Data processing and backend logic
 - Pandas, Matplotlib, Seaborn: Data analysis and visualization
 - HTML/CSS: Frontend layout and styling
+- AWS: Host Flask Application
 
 ---
 
-## 🔄 User Flow
+## User Flow
 
 1. User fills out form at `/` (index.html).
 2. Data is saved to MongoDB (`income_survey.responses` collection).
@@ -47,7 +56,7 @@ This project enables efficient collection and analysis of user financial data:
 
 ---
 
-## 🧠 Data Model
+## Data Model
 
 Each user submission contains:
 
@@ -63,7 +72,7 @@ Each user submission contains:
 
 ---
 
-## 📋 Form Inputs
+## Form Inputs
 
 - Age (number input)
 - Gender (dropdown)
@@ -74,7 +83,7 @@ Form validates all required inputs before submission. Expense amounts are only s
 
 ---
 
-## 📊 Jupyter Notebooks
+## Jupyter Notebooks
 
 ### 1. `UserData.csv.ipynb`
 - Defines `User` class
@@ -90,31 +99,26 @@ Form validates all required inputs before submission. Expense amounts are only s
 
 ---
 
-## 📁 Sample CSV Output
+## Sample CSV Output
 
-<pre> ``` Age,Gender,Income,utilities,entertainment,school_fees,shopping,healthcare 25,Female,50000,2000,1500,3000,1000,500 ``` </pre>
----
-
-## ✅ Completed Features
-
-- ✅ Flask app with user-friendly form
-- ✅ MongoDB for secure data storage
-- ✅ Custom Python `User` class for processing
-- ✅ CSV export functionality
-- ✅ Exploratory data analysis and visualizations
-- ✅ Charts and plots saved for reporting
+| Age | Gender | Income | Utilities | Entertainment | School Fees | Shopping | Healthcare |
+|-----|--------|--------|-----------|---------------|-------------|----------|------------|
+| 25  | Female | 50000  | 2000      | 1500          | 3000        | 1000     | 500        |
 
 ---
 
-## 🚀 Future Improvements
+##  Completed Features
 
-- Add interactive dashboards (e.g., Plotly, Dash)
-- Enable PDF report generation
-- Implement data validation and user authentication
-
+- Flask app with user-friendly form
+-  MongoDB for secure data storage
+-  Custom Python `User` class for processing
+-  CSV export functionality
+-  Exploratory data analysis and visualizations
+-  Charts and plots saved for reporting
+-  AWS to host Flask Application
 ---
 
-## 📌 Notes
+##  Notes
 
 - After every new form submission, re-run `UserData.csv.ipynb` to update the CSV.
 - Ensure consistent column casing for smooth analysis (`Gender` vs `gender`).
