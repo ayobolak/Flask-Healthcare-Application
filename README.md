@@ -28,7 +28,9 @@ This project enables efficient collection and analysis of user financial data:
   - `application.py` — Main Flask application  
   - `users.csv` — Exported CSV from MongoDB data  
   - `UserData.csv.ipynb` — Notebook to export data to CSV  
-  - `Analysis.ipynb` — Notebook for data analysis and visualizations  
+  - `Analysis.ipynb` — Notebook for data analysis and visualizations
+  - `age_vs_income image - For Presentation
+  - `gender_vs_spenging image - For Presentation
 
 ## Technologies Used
 
