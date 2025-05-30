@@ -19,10 +19,16 @@ This project enables efficient collection and analysis of user financial data:
 
 ---
 
-## Project Structure
+### 📁 Project Structure
 
-
-
+- `project_folder/`
+  - `templates/`
+    - `index.html` — HTML form for user input  
+    - `submissions.html` — Page to display all submissions  
+  - `application.py` — Main Flask application  
+  - `users.csv` — Exported CSV from MongoDB data  
+  - `UserData.csv.ipynb` — Notebook to export data to CSV  
+  - `Analysis.ipynb` — Notebook for data analysis and visualizations  
 
 ## Technologies Used
 
